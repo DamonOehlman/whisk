@@ -27,6 +27,24 @@ console.log(people.map(pluck('address.country')));
 // --> [ 'Australia', 'New Zealand', 'Fiji' ]
 ```
 
+## zip
+
+zip one array with other arrays
+
+```js
+var zip = require('whisk/zip');
+
+console.log([1, 2, 3].map(zip(['a', 'b', 'c'])));
+// --> [ [1, 'a'], [2, 'b'], [3, 'c'] ]
+
+console.log([1, 2, 3].map(zip(['a', 'b', 'c'], ['x', 'y', 'z'])));
+// --> [ [1, 'a', 'x'], [2, 'b', 'y'], [3, 'c', 'z'] ]
+```
+
+## zip todo
+
+- tests
+
 ## License(s)
 
 ### MIT
