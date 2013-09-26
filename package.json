@@ -1,0 +1,28 @@
+{
+  "name": "whisk",
+  "version": "0.0.0",
+  "description": "Functional operation helpers (underscore-like) for working with map, filter, reduce, etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/all.js",
+    "gendocs": "gendocs > README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DamonOehlman/whisk.git"
+  },
+  "keywords": [
+    "underscore",
+    "lodash",
+    "functional",
+    "selective"
+  ],
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DamonOehlman/whisk/issues"
+  },
+  "devDependencies": {
+    "tape": "~1.1.1"
+  }
+}
