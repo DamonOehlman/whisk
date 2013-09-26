@@ -5,7 +5,7 @@
 
   <<< examples/pluck.js
 
-  ### TODO
+  ### pluck todo
 
   - Permit the extraction of multiple properties (should probably be a
     separate function?)
