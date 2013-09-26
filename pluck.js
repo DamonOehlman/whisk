@@ -5,16 +5,19 @@
 
   <<< examples/pluck.js
 
-  ### pluck todo
-
-  - Permit the extraction of multiple properties (should probably be a
-    separate function?)
-
-  - Ability to pluck nested properties (e.g. `address.street`)
-
 **/
 module.exports = function(path) {
+  var parts = (path || '').split('.');
+  var maxIdx = parts.length - 1;
+
   return function(item) {
-    return item && item[path];
+    var partIdx = 0;
+    var val = item;
+
+    do {
+      val = val && val[parts[partIdx++]];
+    } while (val && partIdx <= maxIdx);
+
+    return val;
   };
 };
