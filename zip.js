@@ -5,10 +5,10 @@
 
   <<< examples/zip.js
 
-  ## zip todo
+  ### zip todo
 
   - tests
-  
+
 **/
 module.exports = function() {
   var targets = [].slice.call(arguments);
