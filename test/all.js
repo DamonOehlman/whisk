@@ -1,1 +1,2 @@
 require('./pluck');
+require('./flatten');
