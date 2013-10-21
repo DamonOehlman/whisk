@@ -6,7 +6,18 @@ for working with map, filter, reduce, etc.
 
 [![NPM](https://nodei.co/npm/whisk.png)](https://nodei.co/npm/whisk/)
 
-[![Build Status](https://travis-ci.org/DamonOehlman/whisk.png?branch=master)](https://travis-ci.org/DamonOehlman/whisk)
+
+
+## flatten
+
+Flatten an array using `[].reduce`
+
+```js
+var flatten = require('whisk/flatten');
+
+console.log([1, [2, 3], 4, [5]].reduce(flatten));
+// --> [ 1, 2, 3, 4, 5 ]
+```
 
 ## pluck
 
@@ -41,7 +52,7 @@ console.log([1, 2, 3].map(zip(['a', 'b', 'c'], ['x', 'y', 'z'])));
 // --> [ [1, 'a', 'x'], [2, 'b', 'y'], [3, 'c', 'z'] ]
 ```
 
-## zip todo
+### zip todo
 
 - tests
 
