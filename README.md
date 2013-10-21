@@ -6,7 +6,7 @@ for working with map, filter, reduce, etc.
 
 [![NPM](https://nodei.co/npm/whisk.png)](https://nodei.co/npm/whisk/)
 
-
+[![Build Status](https://drone.io/bitbucket.org/DamonOehlman/whisk/status.png)](https://drone.io/bitbucket.org/DamonOehlman/whisk/latest)
 
 ## flatten
 
