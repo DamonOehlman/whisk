@@ -47,7 +47,7 @@ module.exports = function() {
     return function(item) {
       var data = {};
 
-      for (var ii = fields.length; ii--; ) {
+      for (var ii = 0, len = fields.length; ii < len; ii++) {
         data[fields[ii].name] = extractor([fields[ii].parts[0]], 0)(item);
       }
 
