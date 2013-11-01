@@ -41,3 +41,16 @@ test('extract missing nested property yields undefined', function(t) {
     'undefined results received as expected'
   );
 });
+
+test('extract multiple properties into an object', function(t) {
+  t.plan(1);
+  t.deepEqual(
+    people.map(pluck('name', 'age')),
+    [
+      { name: 'Bob', age: 35 },
+      { name: 'Thelma', age: 32 },
+      { name: 'Roger', age: 50 }
+    ],
+    'pluck multiple fields returns an object with the target attributes'
+  );
+});

@@ -21,7 +21,13 @@ console.log([1, [2, 3], 4, [5]].reduce(flatten));
 
 ## pluck
 
-A very simple single field property extractor.
+Extract targeted properties from a source object. When a single property
+value is requested, then just that value is returned.
+
+In the case where multiple properties are requested (in a varargs calling
+style) a new object will be created with the requested properties copied
+across.  __NOTE:__ In the second form extraction of nested properties is
+not supported.
 
 ```js
 var pluck = require('whisk/pluck');
@@ -36,6 +42,9 @@ console.log(people.map(pluck('name')));
 
 console.log(people.map(pluck('address.country')));
 // --> [ 'Australia', 'New Zealand', 'Fiji' ]
+
+console.log(people.map(pluck('name', 'age')));
+// --> [ { name: 'Bob', age: 35 }, { name: 'Thelma', age: 32 }, { name: 'Roger', age: 50 } ]
 ```
 
 ## zip

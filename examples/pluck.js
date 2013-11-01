@@ -10,3 +10,6 @@ console.log(people.map(pluck('name')));
 
 console.log(people.map(pluck('address.country')));
 // --> [ 'Australia', 'New Zealand', 'Fiji' ]
+
+console.log(people.map(pluck('name', 'age')));
+// --> [ { name: 'Bob', age: 35 }, { name: 'Thelma', age: 32 }, { name: 'Roger', age: 50 } ]
