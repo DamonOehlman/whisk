@@ -4,7 +4,7 @@
   Flatten an array using `[].reduce`
 
   <<< examples/flatten.js
-  
+
 **/
 
 module.exports = function(a, b) {
