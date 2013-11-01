@@ -26,7 +26,9 @@ value is requested, then just that value is returned.
 
 In the case where multiple properties are requested (in a varargs calling
 style) a new object will be created with the requested properties copied
-across.  __NOTE:__ In the second form extraction of nested properties is
+across.
+
+__NOTE:__ In the second form extraction of nested properties is
 not supported.
 
 ```js
