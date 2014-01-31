@@ -7,5 +7,6 @@
 **/
 
 exports.flatten = require('./flatten');
+exports.not = require('./not');
 exports.pluck = require('./pluck');
 exports.zip = require('./zip');
