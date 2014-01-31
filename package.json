@@ -1,6 +1,6 @@
 {
   "name": "whisk",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Functional operation helpers (underscore-like) for working with map, filter, reduce, etc",
   "main": "index.js",
   "scripts": {
