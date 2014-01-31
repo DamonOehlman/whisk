@@ -19,6 +19,25 @@ console.log([1, [2, 3], 4, [5]].reduce(flatten));
 // --> [ 1, 2, 3, 4, 5 ]
 ```
 
+## not
+
+Designed to be used in combination with an `[].filter` the `not` function
+can be used to exlude items from an array.
+
+```js
+var not = require('whisk/not');
+var items = ['a', 'b', 'c', 'd', 'e'];
+
+console.log(items.filter(not('a')));
+// --> [ 'b', 'c', 'd', 'e' ]
+
+console.log(items.filter(not(['a', 'b'])));
+// --> [ 'c', 'd', 'e' ]
+
+console.log(items.filter(not('a', 'b')));
+// --> [ 'c', 'd', 'e' ]
+```
+
 ## pluck
 
 Extract targeted properties from a source object. When a single property
@@ -71,7 +90,7 @@ console.log([1, 2, 3].map(zip(['a', 'b', 'c'], ['x', 'y', 'z'])));
 
 ### MIT
 
-Copyright (c) 2013 Damon Oehlman <damon.oehlman@gmail.com>
+Copyright (c) 2014 Damon Oehlman <damon.oehlman@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
