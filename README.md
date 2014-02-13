@@ -6,7 +6,7 @@ for working with map, filter, reduce, etc.
 
 [![NPM](https://nodei.co/npm/whisk.png)](https://nodei.co/npm/whisk/)
 
-[![Build Status](https://drone.io/bitbucket.org/DamonOehlman/whisk/status.png)](https://drone.io/bitbucket.org/DamonOehlman/whisk/latest)
+[![Build Status](https://drone.io/github.com/DamonOehlman/whisk/status.png)](https://drone.io/github.com/DamonOehlman/whisk/latest)
 
 ## flatten
 
@@ -36,6 +36,23 @@ console.log(items.filter(not(['a', 'b'])));
 
 console.log(items.filter(not('a', 'b')));
 // --> [ 'c', 'd', 'e' ]
+```
+
+## nub
+
+Return only the unique elements of the list.
+
+```js
+var nub = require('whisk/nub');
+
+console.log(nub([ 1, 2, 3, 2, 3, 4 ]));
+// --> [ 1, 2, 3, 4 ]
+
+console.log(nub([ 'red', 'blue', 'red' ]));
+// --> [ 'red', 'blue' ]
+
+console.log(nub([ 4, 6, 6, 8, 3, 4, 1 ]));
+// --> [ 4, 6, 8, 3, 1 ]
 ```
 
 ## pluck
