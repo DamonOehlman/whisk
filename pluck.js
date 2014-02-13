@@ -31,7 +31,7 @@ module.exports = function() {
   }
 
   [].slice.call(arguments).forEach(function(path) {
-    var parts = (path || '').split('.');
+    var parts = typeof path == 'number' ? [ path ] : (path || '').split('.');
 
     fields[fields.length] = {
       name: parts[0],

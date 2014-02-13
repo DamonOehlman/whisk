@@ -6,6 +6,13 @@ var people = [
   { name: 'Roger', age: 50, address: { country: 'Fiji' } }
 ];
 
+var multiparts = [
+  [ 'a', 'what' ],
+  [ 'b', 'is' ],
+  [ 'c', 'the' ],
+  [ 'd', 'matrix' ]
+];
+
 test('extract single property', function(t) {
   t.plan(1);
   t.deepEqual(
@@ -53,4 +60,18 @@ test('extract multiple properties into an object', function(t) {
     ],
     'pluck multiple fields returns an object with the target attributes'
   );
+});
+
+test('extract array index parts from a multidimensional array (index:0)', function(t) {
+  t.plan(1);
+  t.deepEqual(
+    multiparts.map(pluck(0)),
+    [ 'a', 'b', 'c', 'd' ],
+    'ok'
+  );
+});
+
+test('extract array index parts from a multidimensional array (index:1)', function(t) {
+  t.plan(1);
+  t.equal(multiparts.map(pluck(1)).join(' '), 'what is the matrix', 'ok');
 });
