@@ -85,6 +85,17 @@ console.log(people.map(pluck('name', 'age')));
 // --> [ { name: 'Bob', age: 35 }, { name: 'Thelma', age: 32 }, { name: 'Roger', age: 50 } ]
 ```
 
+## range
+
+Create an array of elements from x -> y (inclusive)
+
+```js
+var pluck = require('whisk/range');
+
+console.log(range(0, 3));
+// --> [ 0, 1, 2, 3 ]
+```
+
 ## zip
 
 zip one array with other arrays
