@@ -19,6 +19,23 @@ console.log([1, [2, 3], 4, [5]].reduce(flatten));
 // --> [ 1, 2, 3, 4, 5 ]
 ```
 
+## length
+
+Get the length of the target.
+
+```js
+var length = require('whisk/length');
+
+console.log(length([1, 2, 3]));
+// --> 3
+
+console.log(length('Hello'));
+// --> 5
+
+console.log(['Hi', 'there'].map(length));
+// --> [ 2, 5 ]
+```
+
 ## not
 
 Designed to be used in combination with an `[].filter` the `not` function
