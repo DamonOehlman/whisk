@@ -1,7 +1,7 @@
 {
   "badges": {
     "nodeico": true,
-    "drone": true
+    "travis": true
   },
 
   "license": {}
