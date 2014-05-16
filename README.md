@@ -6,7 +6,7 @@ for working with map, filter, reduce, etc.
 
 [![NPM](https://nodei.co/npm/whisk.png)](https://nodei.co/npm/whisk/)
 
-[![Build Status](https://img.shields.io/travis/DamonOehlman/whisk.svg?branch=master)](https://travis-ci.org/DamonOehlman/whisk)
+[![Build Status](https://img.shields.io/travis/DamonOehlman/whisk.svg?branch=master)](https://travis-ci.org/DamonOehlman/whisk) 
 
 ## flatten
 
@@ -111,6 +111,23 @@ var pluck = require('whisk/range');
 
 console.log(range(0, 3));
 // --> [ 0, 1, 2, 3 ]
+```
+
+## times
+
+Create an element of arrays that can be iterated over n times:
+
+```js
+var times = require('whisk/times');
+
+times(3).forEach(function() {
+  console.log('hello world');
+});
+
+// --> hello world
+// --> hello world
+// --> hello world
+
 ```
 
 ## zip
