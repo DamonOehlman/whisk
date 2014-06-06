@@ -113,6 +113,28 @@ console.log(range(0, 3));
 // --> [ 0, 1, 2, 3 ]
 ```
 
+## sum
+
+Sum an input array of values
+
+```js
+var sum = require('whisk/sum');
+var range = require('whisk/range');
+
+console.log(sum([1, 2]));
+// --> 3
+
+console.log(sum(range(1, 10)));
+// --> 55
+
+console.log([1, 2].reduce(sum));
+// --> 3
+
+console.log(range(1, 10).reduce(sum));
+// --> 55
+
+```
+
 ## times
 
 Create an element of arrays that can be iterated over n times:
