@@ -6,7 +6,7 @@ for working with map, filter, reduce, etc.
 
 [![NPM](https://nodei.co/npm/whisk.png)](https://nodei.co/npm/whisk/)
 
-[![Build Status](https://img.shields.io/travis/DamonOehlman/whisk.svg?branch=master)](https://travis-ci.org/DamonOehlman/whisk) 
+[![Build Status](https://img.shields.io/travis/DamonOehlman/whisk.svg?branch=master)](https://travis-ci.org/DamonOehlman/whisk) [![bitHound Score](https://www.bithound.io/github/DamonOehlman/whisk/badges/score.svg)](https://www.bithound.io/github/DamonOehlman/whisk) 
 
 ## chain
 
