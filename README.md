@@ -8,6 +8,27 @@ for working with map, filter, reduce, etc.
 
 [![Build Status](https://img.shields.io/travis/DamonOehlman/whisk.svg?branch=master)](https://travis-ci.org/DamonOehlman/whisk) 
 
+## chain
+
+Create a function that will create the combined result of calling all
+the provided functions in the provided order.
+
+```js
+var chain = require('whisk/chain');
+
+function add1(value) {
+  return value + 1;
+}
+
+function add5(value) {
+  return value + 5;
+}
+
+console.log(chain(add1, add5)(0));
+// --> 6
+
+```
+
 ## flatten
 
 Flatten an array using `[].reduce`
@@ -174,7 +195,7 @@ console.log([1, 2, 3].map(zip(['a', 'b', 'c'], ['x', 'y', 'z'])));
 
 ### MIT
 
-Copyright (c) 2014 Damon Oehlman <damon.oehlman@gmail.com>
+Copyright (c) 2015 Damon Oehlman <damon.oehlman@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
