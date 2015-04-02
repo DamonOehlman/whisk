@@ -173,7 +173,7 @@ times(3).forEach(function() {
 
 ```
 
-## `within`
+## within
 
 Check whether a value is within a specified array of values:
 

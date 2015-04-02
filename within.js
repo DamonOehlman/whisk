@@ -1,5 +1,5 @@
 /**
-  ## `within`
+  ## within
 
   Check whether a value is within a specified array of values:
 
