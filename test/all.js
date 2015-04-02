@@ -5,3 +5,4 @@ require('./nub');
 require('./range');
 require('./length');
 require('./sum');
+require('./within');
