@@ -173,6 +173,24 @@ times(3).forEach(function() {
 
 ```
 
+## `within`
+
+Check whether a value is within a specified array of values:
+
+```js
+var within = require('whisk/within');
+var isKnownFruit = within(['apple', 'orange', 'banana']);
+
+console.log(isKnownFruit('apple'));
+// --> true
+
+console.log(isKnownFruit('grape'));
+// --> false
+
+console.log(['apple', 'grape', 'banana'].filter(isKnownFruit));
+// --> [ 'apple', 'banana' ]
+```
+
 ## zip
 
 zip one array with other arrays
