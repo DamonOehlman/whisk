@@ -6,3 +6,4 @@ require('./range');
 require('./length');
 require('./sum');
 require('./within');
+require('./match');
