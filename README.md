@@ -57,6 +57,32 @@ console.log(['Hi', 'there'].map(length));
 // --> [ 2, 5 ]
 ```
 
+## match
+
+Given a set of properties (A), test whether another object (B) has properties
+that match the values specified in A.  Additional properties in B are not
+accounted for when determining the match.
+
+```js
+var match = require('whisk/match');
+
+// create a function that find level 1 headings in a markdown AST
+// see: marked-ast package
+var isH1 = match({ type: 'heading', level: 1 });
+
+console.log(isH1({ type: 'code' }));
+// --> false
+
+console.log(isH1({ type: 'heading', level: 2 }));
+// --> false
+
+console.log(isH1({ type: 'heading', level: 1 }));
+// --> true
+
+console.log(isH1({ type: 'heading', level: 1, color: 'red' }));
+// true
+```
+
 ## not
 
 Designed to be used in combination with an `[].filter` the `not` function
