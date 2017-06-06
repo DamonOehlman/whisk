@@ -9,3 +9,12 @@ test('numeric uniques', function(t) {
     'ok'
   );
 });
+
+test('string uniques', function(t) {
+  t.plan(1);
+  t.deepEqual(
+    nub(['foo', 'bar', 'foo', 'baz', 'bar', 'qux', 'qux']),
+    ['foo', 'bar', 'baz', 'qux'],
+    'ok'
+  );
+})
