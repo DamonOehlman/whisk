@@ -3,6 +3,7 @@
   "version": "1.4.0",
   "description": "Functional operation helpers (underscore-like) for working with map, filter, reduce, etc",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "node test/all.js",
     "gendocs": "gendocs > README.md"
